@@ -239,7 +239,7 @@ const createFood = (event) => {
         console.log(res.data)
 
         const newP2 = document.createElement('p')
-            newP2.textContent = res.data
+            newP2.textContent = res.data[res.data.length - 1]
             document.body.appendChild(newP2)
             
     })
